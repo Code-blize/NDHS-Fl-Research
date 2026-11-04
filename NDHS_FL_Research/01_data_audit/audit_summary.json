@@ -1,0 +1,13 @@
+{
+    "source_file": "NGIR7BFL.DTA",
+    "original_rows": 41821,
+    "original_columns": 5395,
+    "eligible_rows": 21442,
+    "home_deliveries": 12441,
+    "facility_deliveries": 9001,
+    "unweighted_facility_prevalence": 0.4197836022759071,
+    "weighted_facility_prevalence": 0.4190857254947326,
+    "unique_psus": 1389,
+    "unique_v022_strata": 74,
+    "v001_equals_v021": true
+}

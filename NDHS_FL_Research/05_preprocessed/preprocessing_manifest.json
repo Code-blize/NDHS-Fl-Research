@@ -1,0 +1,193 @@
+{
+    "dataset": "2018 NDHS Individual Recode",
+    "split_seed": 2026,
+    "preprocessing_fit_partition": "train",
+    "validation_used_for_fitting": false,
+    "test_used_for_fitting": false,
+    "target": "facility_delivery",
+    "configurations": {
+        "baseline": {
+            "input_features": [
+                "age_at_birth",
+                "bord_01",
+                "v025",
+                "v106",
+                "v190",
+                "v714"
+            ],
+            "numeric_features": [
+                "age_at_birth",
+                "bord_01"
+            ],
+            "categorical_features": [
+                "v025",
+                "v106",
+                "v190",
+                "v714"
+            ],
+            "processed_input_dimension": 15,
+            "train_shape": [
+                12851,
+                15
+            ],
+            "validation_shape": [
+                4299,
+                15
+            ],
+            "test_shape": [
+                4292,
+                15
+            ],
+            "train_class_counts": {
+                "home": 7451,
+                "facility": 5400
+            },
+            "validation_class_counts": {
+                "home": 2493,
+                "facility": 1806
+            },
+            "test_class_counts": {
+                "home": 2497,
+                "facility": 1795
+            },
+            "all_values_finite": true,
+            "feature_names": [
+                "numeric__age_at_birth",
+                "numeric__bord_01",
+                "categorical__v025_1",
+                "categorical__v025_2",
+                "categorical__v106_0",
+                "categorical__v106_1",
+                "categorical__v106_2",
+                "categorical__v106_3",
+                "categorical__v190_1",
+                "categorical__v190_2",
+                "categorical__v190_3",
+                "categorical__v190_4",
+                "categorical__v190_5",
+                "categorical__v714_0",
+                "categorical__v714_1"
+            ]
+        },
+        "expanded": {
+            "input_features": [
+                "age_at_birth",
+                "bord_01",
+                "m14_1",
+                "v025",
+                "v106",
+                "v190",
+                "v714",
+                "v467d",
+                "v157",
+                "v158",
+                "v159",
+                "v701",
+                "v130",
+                "v131",
+                "m14_1_unknown"
+            ],
+            "numeric_features": [
+                "age_at_birth",
+                "bord_01",
+                "m14_1"
+            ],
+            "categorical_features": [
+                "v025",
+                "v106",
+                "v190",
+                "v714",
+                "v467d",
+                "v157",
+                "v158",
+                "v159",
+                "v701",
+                "v130",
+                "v131"
+            ],
+            "processed_input_dimension": 51,
+            "train_shape": [
+                12851,
+                51
+            ],
+            "validation_shape": [
+                4299,
+                51
+            ],
+            "test_shape": [
+                4292,
+                51
+            ],
+            "train_class_counts": {
+                "home": 7451,
+                "facility": 5400
+            },
+            "validation_class_counts": {
+                "home": 2493,
+                "facility": 1806
+            },
+            "test_class_counts": {
+                "home": 2497,
+                "facility": 1795
+            },
+            "all_values_finite": true,
+            "feature_names": [
+                "numeric__age_at_birth",
+                "numeric__bord_01",
+                "numeric__m14_1",
+                "categorical__v025_1",
+                "categorical__v025_2",
+                "categorical__v106_0",
+                "categorical__v106_1",
+                "categorical__v106_2",
+                "categorical__v106_3",
+                "categorical__v190_1",
+                "categorical__v190_2",
+                "categorical__v190_3",
+                "categorical__v190_4",
+                "categorical__v190_5",
+                "categorical__v714_0",
+                "categorical__v714_1",
+                "categorical__v467d_1",
+                "categorical__v467d_2",
+                "categorical__v157_0",
+                "categorical__v157_1",
+                "categorical__v157_2",
+                "categorical__v158_0",
+                "categorical__v158_1",
+                "categorical__v158_2",
+                "categorical__v159_0",
+                "categorical__v159_1",
+                "categorical__v159_2",
+                "categorical__v701_don't know",
+                "categorical__v701_higher",
+                "categorical__v701_no education",
+                "categorical__v701_not applicable - no current union",
+                "categorical__v701_primary",
+                "categorical__v701_secondary",
+                "categorical__v130_1",
+                "categorical__v130_2",
+                "categorical__v130_3",
+                "categorical__v130_4",
+                "categorical__v130_96",
+                "categorical__v131_1",
+                "categorical__v131_10",
+                "categorical__v131_2",
+                "categorical__v131_3",
+                "categorical__v131_4",
+                "categorical__v131_5",
+                "categorical__v131_6",
+                "categorical__v131_7",
+                "categorical__v131_8",
+                "categorical__v131_9",
+                "categorical__v131_96",
+                "categorical__v131_98",
+                "m14_unknown__m14_1_unknown"
+            ]
+        }
+    },
+    "sklearn_version": "1.9.0",
+    "respondent_assignments_shared": true,
+    "model_training_performed": false,
+    "test_used_for_model_selection": false
+}

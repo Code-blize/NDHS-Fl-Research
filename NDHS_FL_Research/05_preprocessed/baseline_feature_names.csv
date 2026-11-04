@@ -1,0 +1,16 @@
+feature_index,processed_feature
+0,numeric__age_at_birth
+1,numeric__bord_01
+2,categorical__v025_1
+3,categorical__v025_2
+4,categorical__v106_0
+5,categorical__v106_1
+6,categorical__v106_2
+7,categorical__v106_3
+8,categorical__v190_1
+9,categorical__v190_2
+10,categorical__v190_3
+11,categorical__v190_4
+12,categorical__v190_5
+13,categorical__v714_0
+14,categorical__v714_1

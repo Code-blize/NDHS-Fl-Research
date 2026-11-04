@@ -1,0 +1,15 @@
+{
+    "variable": "v701",
+    "treatment": "Categorical predictor; retain observed education categories, 'don't know', and a distinct structural non-applicability category.",
+    "structural_missingness": "Missing for respondents not currently in a union (v501 = 0, 3, 4, 5).",
+    "observed_categories": [
+        "no education",
+        "primary",
+        "secondary",
+        "higher",
+        "don't know",
+        "not applicable - no current union"
+    ],
+    "imputation": "None at this stage",
+    "encoding": "To be fitted using training data only"
+}

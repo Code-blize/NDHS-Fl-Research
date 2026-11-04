@@ -1,0 +1,43 @@
+{
+    "study": "Federated Learning Under Geographic Structural Heterogeneity Across Nigeria's Six Geopolitical Zones",
+    "source_file": "NGIR7BFL.DTA",
+    "analytical_sample_size": 21442,
+    "target": "facility_delivery",
+    "client_assignment": "v024",
+    "baseline_features": [
+        "age_at_birth",
+        "v025",
+        "v106",
+        "v190",
+        "v714",
+        "bord_01"
+    ],
+    "expanded_features": [
+        "age_at_birth",
+        "v025",
+        "v106",
+        "v190",
+        "v714",
+        "bord_01",
+        "m14_1",
+        "v467d",
+        "v157",
+        "v158",
+        "v159",
+        "v701",
+        "v130",
+        "v131"
+    ],
+    "survey_metadata": [
+        "v005",
+        "v021",
+        "v022",
+        "v023",
+        "v001"
+    ],
+    "weight_formula": "v005 / 1000000",
+    "v701_status": "Provisional categorical representation; missingness classification requires review.",
+    "preprocessing_performed": false,
+    "train_test_split_performed": false,
+    "model_training_performed": false
+}

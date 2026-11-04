@@ -1,0 +1,21 @@
+{
+    "purpose": "Runtime and implementation pilot only",
+    "seed": 42,
+    "rounds": 3,
+    "local_epochs": 1,
+    "batch_size": 32,
+    "learning_rate": 0.001,
+    "fedprox_mu": 0.01,
+    "device": "cpu",
+    "algorithms": [
+        "FedAvg",
+        "FedProx"
+    ],
+    "feature_configurations": [
+        "baseline",
+        "expanded"
+    ],
+    "evaluation_partition": "validation",
+    "test_partition_accessed": false,
+    "confirmatory_experiment": false
+}

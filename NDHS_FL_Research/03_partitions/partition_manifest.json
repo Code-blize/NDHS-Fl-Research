@@ -1,0 +1,27 @@
+{
+    "dataset": "2018 Nigeria Demographic and Health Survey",
+    "analytical_observations": 21442,
+    "split_method": "StratifiedGroupKFold",
+    "stratification": "geopolitical zone x facility_delivery",
+    "grouping_variable": "v021",
+    "n_splits": 5,
+    "split_seed": 2026,
+    "fold_assignment": {
+        "test": 0,
+        "validation": 1,
+        "train": [
+            2,
+            3,
+            4
+        ]
+    },
+    "intended_proportions": {
+        "train": 0.6,
+        "validation": 0.2,
+        "test": 0.2
+    },
+    "feature_configurations_share_assignments": true,
+    "psu_leakage_check_passed": true,
+    "region_outcome_coverage_check_passed": true,
+    "model_training_performed": false
+}
