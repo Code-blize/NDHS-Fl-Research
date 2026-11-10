@@ -1,0 +1,3 @@
+configuration,test,passed,mu,rounds,local_epochs
+baseline,FedProx mu=0.01 smoke check,True,0.01,1,1
+expanded,FedProx mu=0.01 smoke check,True,0.01,1,1

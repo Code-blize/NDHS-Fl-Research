@@ -1,0 +1,122 @@
+{
+    "implementation_name": "Canonical Federated Learning Implementation",
+    "version": "1.0",
+    "purpose": "Canonical implementation and sanity testing only",
+    "algorithms": [
+        "FedAvg",
+        "FedProx"
+    ],
+    "feature_configurations": [
+        "baseline",
+        "expanded"
+    ],
+    "model_architecture": "input -> 16 -> 8 -> 1",
+    "hidden_activation": "ReLU",
+    "output": "Single logit",
+    "loss": "BCEWithLogitsLoss",
+    "optimizer": "Adam",
+    "optimizer_lifecycle": "New Adam optimizer for every client in every communication round; optimizer moments reset between client-rounds.",
+    "learning_rate": 0.001,
+    "batch_size": 32,
+    "fedprox_mu": 0.01,
+    "client_participation": "All six geopolitical-zone clients every round",
+    "client_order": "Fixed region ID order 1 through 6",
+    "aggregation": "Sample-size-weighted model parameter aggregation",
+    "client_seed_formula": "experiment_seed + round_number * 1000 + region_id",
+    "dataloader": {
+        "shuffle": true,
+        "explicit_generator": true,
+        "num_workers": 0
+    },
+    "prediction_threshold": 0.5,
+    "calibration_method": "Expected calibration error with 10 equal-width bins",
+    "sanity_test_rounds": 1,
+    "sanity_test_local_epochs": 1,
+    "parameter_tolerance": 1e-07,
+    "test_results": [
+        {
+            "test_id": "DET-03",
+            "configuration": "baseline",
+            "test": "Matched initial model parameters",
+            "passed": true,
+            "maximum_parameter_difference": 0.0,
+            "tolerance": 1e-07
+        },
+        {
+            "test_id": "DET-01",
+            "configuration": "baseline",
+            "test": "FedProx mu=0 versus FedAvg",
+            "passed": true,
+            "maximum_parameter_difference": 0.0,
+            "tolerance": 1e-07
+        },
+        {
+            "test_id": "DET-02",
+            "configuration": "baseline",
+            "test": "Repeated same-seed experiment",
+            "passed": true,
+            "maximum_parameter_difference": 0.0,
+            "metrics_identical_within_tolerance": true,
+            "tolerance": 1e-07
+        },
+        {
+            "test_id": "DET-03",
+            "configuration": "expanded",
+            "test": "Matched initial model parameters",
+            "passed": true,
+            "maximum_parameter_difference": 0.0,
+            "tolerance": 1e-07
+        },
+        {
+            "test_id": "DET-01",
+            "configuration": "expanded",
+            "test": "FedProx mu=0 versus FedAvg",
+            "passed": true,
+            "maximum_parameter_difference": 0.0,
+            "tolerance": 1e-07
+        },
+        {
+            "test_id": "DET-02",
+            "configuration": "expanded",
+            "test": "Repeated same-seed experiment",
+            "passed": true,
+            "maximum_parameter_difference": 0.0,
+            "metrics_identical_within_tolerance": true,
+            "tolerance": 1e-07
+        }
+    ],
+    "smoke_test_results": [
+        {
+            "configuration": "baseline",
+            "test": "FedProx mu=0.01 smoke check",
+            "passed": true,
+            "mu": 0.01,
+            "rounds": 1,
+            "local_epochs": 1
+        },
+        {
+            "configuration": "expanded",
+            "test": "FedProx mu=0.01 smoke check",
+            "passed": true,
+            "mu": 0.01,
+            "rounds": 1,
+            "local_epochs": 1
+        }
+    ],
+    "all_sanity_tests_passed": true,
+    "all_smoke_tests_passed": true,
+    "implementation_tests_passed": true,
+    "test_partition_accessed": false,
+    "confirmatory_experiment": false,
+    "environment": {
+        "python_version": "3.11.9",
+        "platform": "Windows-10-10.0.19045-SP0",
+        "pytorch_version": "2.14.0+cpu",
+        "numpy_version": "2.4.6",
+        "pandas_version": "3.0.5",
+        "sklearn_version": "1.9.0",
+        "device": "cpu",
+        "deterministic_algorithms": true
+    },
+    "created_utc": "2026-11-10T21:35:07.016346+00:00"
+}
