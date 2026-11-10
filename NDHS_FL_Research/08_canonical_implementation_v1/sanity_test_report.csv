@@ -1,0 +1,7 @@
+test_id,configuration,test,passed,maximum_parameter_difference,tolerance,metrics_identical_within_tolerance
+DET-03,baseline,Matched initial model parameters,True,0.0,1e-07,
+DET-01,baseline,FedProx mu=0 versus FedAvg,True,0.0,1e-07,
+DET-02,baseline,Repeated same-seed experiment,True,0.0,1e-07,True
+DET-03,expanded,Matched initial model parameters,True,0.0,1e-07,
+DET-01,expanded,FedProx mu=0 versus FedAvg,True,0.0,1e-07,
+DET-02,expanded,Repeated same-seed experiment,True,0.0,1e-07,True

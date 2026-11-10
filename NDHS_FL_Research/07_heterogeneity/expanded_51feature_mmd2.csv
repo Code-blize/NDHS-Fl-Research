@@ -1,0 +1,7 @@
+region_id,region,mmd2,client_sample_size,reference_sample_size,client_training_n,other_five_zones_training_n,feature_dimension,rbf_gamma,sampling_seed,estimator
+1,North Central,0.011835772317339677,1000,1000,2304,10547,51,0.02,2027,biased_empirical_v_statistic
+2,North East,0.029523368337273537,1000,1000,2698,10153,51,0.02,2028,biased_empirical_v_statistic
+3,North West,0.06655616838615108,1000,1000,3767,9084,51,0.02,2029,biased_empirical_v_statistic
+4,South East,0.10269017575275496,1000,1000,1402,11449,51,0.02,2030,biased_empirical_v_statistic
+5,South South,0.0515557264911255,1000,1000,1231,11620,51,0.02,2031,biased_empirical_v_statistic
+6,South West,0.10323611022320622,1000,1000,1449,11402,51,0.02,2032,biased_empirical_v_statistic

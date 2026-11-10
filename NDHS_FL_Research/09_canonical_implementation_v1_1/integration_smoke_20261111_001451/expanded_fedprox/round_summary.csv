@@ -1,0 +1,2 @@
+configuration,algorithm,seed,round,mu,local_epochs,learning_rate,batch_size,validation_binary_cross_entropy_loss,validation_accuracy,validation_macro_f1,validation_auroc,validation_auprc,validation_brier_score,validation_ece,validation_calibration_intercept,validation_calibration_slope
+expanded,FedProx,42,1,0.01,1,0.001,32,0.644048477280297,0.5799023028611305,0.3670494699646643,0.8510085159820698,,0.22617518872920003,0.23896355201516434,,

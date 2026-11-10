@@ -1,0 +1,59 @@
+{
+  "implementation": "Canonical Federated Learning Implementation",
+  "version": "1.1",
+  "run_type": "integration_smoke_only",
+  "confirmatory_experiment": false,
+  "test_partition_accessed": false,
+  "validation_partition_used": true,
+  "metadata": {
+    "configuration": "expanded",
+    "input_features": 51,
+    "algorithm": "FedProx",
+    "seed": 42,
+    "rounds": 1,
+    "local_epochs": 1,
+    "mu": 0.01,
+    "training_n": 12851,
+    "validation_n": 4299,
+    "validation_ids_saved": true
+  },
+  "model_architecture": "input -> 16 -> 8 -> 1",
+  "activation": "ReLU",
+  "output": "single logit",
+  "training_loss": "BCEWithLogitsLoss",
+  "optimizer": "Adam",
+  "optimizer_lifecycle": "New Adam optimizer for each client in each communication round; optimizer moments reset between client-rounds.",
+  "learning_rate": 0.001,
+  "batch_size": 32,
+  "fedprox_mu": 0.01,
+  "client_participation": "All six clients every round",
+  "client_order": "Fixed region ID order 1 through 6",
+  "aggregation": "Sample-size-weighted parameter aggregation",
+  "client_seed_formula": "seed + round_number*1000 + region_id",
+  "dataloader": {
+    "shuffle": true,
+    "explicit_generator": true,
+    "num_workers": 0
+  },
+  "evaluator": {
+    "version": "1.1",
+    "threshold": 0.5,
+    "ece_bins": 10,
+    "undefined_metrics": "NaN with explicit status/reason"
+  },
+  "source_hashes": {
+    "canonical_implementation": "f9624ed210cd2ca9a27dbf9a7960425568b95a3996ef017709876a9561471f89",
+    "evaluation_module": "657c1804df6fdf633357cf50cb3be845a577a1708091b2e59c0524dc9ee18122"
+  },
+  "environment": {
+    "python_version": "3.11.9",
+    "platform": "Windows-10-10.0.19045-SP0",
+    "pytorch_version": "2.14.0+cpu",
+    "numpy_version": "2.4.6",
+    "pandas_version": "3.0.5",
+    "sklearn_version": "1.9.0",
+    "device": "cpu",
+    "deterministic_algorithms": true
+  },
+  "created_utc": "2026-11-10T23:15:00.352349+00:00"
+}

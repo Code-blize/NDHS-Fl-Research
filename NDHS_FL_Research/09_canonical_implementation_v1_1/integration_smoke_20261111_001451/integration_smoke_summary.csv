@@ -1,0 +1,5 @@
+configuration,input_features,algorithm,seed,rounds,local_epochs,mu,training_n,validation_n,validation_ids_saved,final_validation_accuracy,final_validation_macro_f1,outputs_saved
+baseline,15,FedAvg,42,1,1,0.0,12851,4299,True,0.5808327518027449,0.3704951074972437,True
+baseline,15,FedProx,42,1,1,0.01,12851,4299,True,0.580134915096534,0.36868173857238523,True
+expanded,51,FedAvg,42,1,1,0.0,12851,4299,True,0.5799023028611305,0.3670494699646643,True
+expanded,51,FedProx,42,1,1,0.01,12851,4299,True,0.5799023028611305,0.3670494699646643,True

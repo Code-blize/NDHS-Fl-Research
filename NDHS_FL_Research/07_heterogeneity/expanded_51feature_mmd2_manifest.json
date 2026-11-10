@@ -1,0 +1,36 @@
+{
+    "analysis_id": "PHASE3_EXPANDED_MMD_001",
+    "purpose": "Expanded feature-distribution heterogeneity",
+    "input_file": "C:\\Users\\usher\\Documents\\NDHS-Fl-Research\\NDHS_FL_Research\\05_preprocessed\\expanded_train.npz",
+    "data_partition": "training_only",
+    "feature_configuration": "expanded",
+    "feature_dimension": 51,
+    "sample_size_per_group": 1000,
+    "sampling": "without_replacement",
+    "sampling_seed_base": 2026,
+    "sampling_seed_by_region": {
+        "North Central": 2027,
+        "North East": 2028,
+        "North West": 2029,
+        "South East": 2030,
+        "South South": 2031,
+        "South West": 2032
+    },
+    "reference_definition": "Each region compared against the pooled other five regions",
+    "kernel": "RBF",
+    "rbf_gamma": 0.02,
+    "mmd_estimator": "biased_empirical_v_statistic",
+    "estimator_formula": "mean(Kxx) + mean(Kyy) - 2*mean(Kxy), including diagonal terms",
+    "regions": [
+        "North Central",
+        "North East",
+        "North West",
+        "South East",
+        "South South",
+        "South West"
+    ],
+    "test_partition_accessed": false,
+    "validation_partition_accessed": false,
+    "historical_mmd_results_reproduced": false,
+    "created_utc": "2026-11-10T19:28:23.998945+00:00"
+}

@@ -1,0 +1,2 @@
+configuration,algorithm,seed,round,mu,local_epochs,learning_rate,batch_size,validation_binary_cross_entropy_loss,validation_accuracy,validation_macro_f1,validation_auroc,validation_auprc,validation_brier_score,validation_ece,validation_calibration_intercept,validation_calibration_slope
+baseline,FedAvg,42,1,0.0,1,0.001,32,0.6599125732478988,0.5808327518027449,0.3704951074972437,0.7994629702924556,,0.23353288420549884,0.02990774411355431,2.4238347886007787,14.046408153234406
