@@ -1,0 +1,33 @@
+{
+  "pilot_version": "1.0",
+  "pilot_stage": "stage1_10rounds_E1",
+  "confirmatory_experiment": false,
+  "test_partition_accessed": false,
+  "validation_only_evaluation": true,
+  "metadata": {
+    "configuration": "expanded",
+    "input_features": 51,
+    "algorithm": "FedAvg",
+    "seed": 43,
+    "communication_rounds": 10,
+    "local_epochs": 1,
+    "learning_rate": 0.001,
+    "fedprox_mu": 0.0,
+    "batch_size": 32,
+    "training_n": 12851,
+    "validation_n": 4299,
+    "training_source_ids_unique": true,
+    "validation_source_ids_unique": true,
+    "elapsed_seconds": 16.989216500078328,
+    "mean_seconds_per_round": 1.6989216500078328
+  },
+  "canonical_implementation_version": "1.1",
+  "canonical_implementation_sha256": "f9624ed210cd2ca9a27dbf9a7960425568b95a3996ef017709876a9561471f89",
+  "evaluation_module_sha256": "657c1804df6fdf633357cf50cb3be845a577a1708091b2e59c0524dc9ee18122",
+  "python_version": "3.11.9",
+  "pytorch_version": "2.14.0+cpu",
+  "numpy_version": "2.4.6",
+  "pandas_version": "3.0.5",
+  "device": "cpu",
+  "created_utc": "2026-11-11T11:21:50.705891+00:00"
+}

@@ -1,0 +1,5 @@
+configuration,seed,maximum_initial_parameter_difference,passed
+baseline,42,0.0,True
+baseline,43,0.0,True
+expanded,42,0.0,True
+expanded,43,0.0,True

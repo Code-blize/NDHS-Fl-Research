@@ -1,0 +1,71 @@
+feature_configuration,algorithm,seed,communication_round,partition,threshold,evaluator_version,region_id,region,n,TN,FP,FN,TP,mu
+baseline,FedProx,43,1,validation,0.5,1.1,0,Pooled,4299,2493,0,1806,0,0.01
+baseline,FedProx,43,1,validation,0.5,1.1,1,North Central,768,369,0,399,0,0.01
+baseline,FedProx,43,1,validation,0.5,1.1,2,North East,903,667,0,236,0,0.01
+baseline,FedProx,43,1,validation,0.5,1.1,3,North West,1269,1069,0,200,0,0.01
+baseline,FedProx,43,1,validation,0.5,1.1,4,South East,470,90,0,380,0,0.01
+baseline,FedProx,43,1,validation,0.5,1.1,5,South South,408,209,0,199,0,0.01
+baseline,FedProx,43,1,validation,0.5,1.1,6,South West,481,89,0,392,0,0.01
+baseline,FedProx,43,2,validation,0.5,1.1,0,Pooled,4299,2491,2,1793,13,0.01
+baseline,FedProx,43,2,validation,0.5,1.1,1,North Central,768,368,1,397,2,0.01
+baseline,FedProx,43,2,validation,0.5,1.1,2,North East,903,667,0,236,0,0.01
+baseline,FedProx,43,2,validation,0.5,1.1,3,North West,1269,1069,0,199,1,0.01
+baseline,FedProx,43,2,validation,0.5,1.1,4,South East,470,90,0,376,4,0.01
+baseline,FedProx,43,2,validation,0.5,1.1,5,South South,408,208,1,195,4,0.01
+baseline,FedProx,43,2,validation,0.5,1.1,6,South West,481,89,0,390,2,0.01
+baseline,FedProx,43,3,validation,0.5,1.1,0,Pooled,4299,2242,251,906,900,0.01
+baseline,FedProx,43,3,validation,0.5,1.1,1,North Central,768,329,40,271,128,0.01
+baseline,FedProx,43,3,validation,0.5,1.1,2,North East,903,636,31,184,52,0.01
+baseline,FedProx,43,3,validation,0.5,1.1,3,North West,1269,1024,45,129,71,0.01
+baseline,FedProx,43,3,validation,0.5,1.1,4,South East,470,69,21,152,228,0.01
+baseline,FedProx,43,3,validation,0.5,1.1,5,South South,408,142,67,61,138,0.01
+baseline,FedProx,43,3,validation,0.5,1.1,6,South West,481,42,47,109,283,0.01
+baseline,FedProx,43,4,validation,0.5,1.1,0,Pooled,4299,2082,411,642,1164,0.01
+baseline,FedProx,43,4,validation,0.5,1.1,1,North Central,768,292,77,193,206,0.01
+baseline,FedProx,43,4,validation,0.5,1.1,2,North East,903,612,55,150,86,0.01
+baseline,FedProx,43,4,validation,0.5,1.1,3,North West,1269,996,73,114,86,0.01
+baseline,FedProx,43,4,validation,0.5,1.1,4,South East,470,57,33,76,304,0.01
+baseline,FedProx,43,4,validation,0.5,1.1,5,South South,408,90,119,34,165,0.01
+baseline,FedProx,43,4,validation,0.5,1.1,6,South West,481,35,54,75,317,0.01
+baseline,FedProx,43,5,validation,0.5,1.1,0,Pooled,4299,2043,450,584,1222,0.01
+baseline,FedProx,43,5,validation,0.5,1.1,1,North Central,768,289,80,174,225,0.01
+baseline,FedProx,43,5,validation,0.5,1.1,2,North East,903,605,62,148,88,0.01
+baseline,FedProx,43,5,validation,0.5,1.1,3,North West,1269,985,84,109,91,0.01
+baseline,FedProx,43,5,validation,0.5,1.1,4,South East,470,51,39,58,322,0.01
+baseline,FedProx,43,5,validation,0.5,1.1,5,South South,408,85,124,32,167,0.01
+baseline,FedProx,43,5,validation,0.5,1.1,6,South West,481,28,61,63,329,0.01
+baseline,FedProx,43,6,validation,0.5,1.1,0,Pooled,4299,2022,471,562,1244,0.01
+baseline,FedProx,43,6,validation,0.5,1.1,1,North Central,768,285,84,168,231,0.01
+baseline,FedProx,43,6,validation,0.5,1.1,2,North East,903,601,66,146,90,0.01
+baseline,FedProx,43,6,validation,0.5,1.1,3,North West,1269,982,87,108,92,0.01
+baseline,FedProx,43,6,validation,0.5,1.1,4,South East,470,47,43,51,329,0.01
+baseline,FedProx,43,6,validation,0.5,1.1,5,South South,408,81,128,31,168,0.01
+baseline,FedProx,43,6,validation,0.5,1.1,6,South West,481,26,63,58,334,0.01
+baseline,FedProx,43,7,validation,0.5,1.1,0,Pooled,4299,1996,497,533,1273,0.01
+baseline,FedProx,43,7,validation,0.5,1.1,1,North Central,768,278,91,160,239,0.01
+baseline,FedProx,43,7,validation,0.5,1.1,2,North East,903,598,69,143,93,0.01
+baseline,FedProx,43,7,validation,0.5,1.1,3,North West,1269,976,93,104,96,0.01
+baseline,FedProx,43,7,validation,0.5,1.1,4,South East,470,42,48,46,334,0.01
+baseline,FedProx,43,7,validation,0.5,1.1,5,South South,408,78,131,28,171,0.01
+baseline,FedProx,43,7,validation,0.5,1.1,6,South West,481,24,65,52,340,0.01
+baseline,FedProx,43,8,validation,0.5,1.1,0,Pooled,4299,2001,492,534,1272,0.01
+baseline,FedProx,43,8,validation,0.5,1.1,1,North Central,768,279,90,162,237,0.01
+baseline,FedProx,43,8,validation,0.5,1.1,2,North East,903,599,68,144,92,0.01
+baseline,FedProx,43,8,validation,0.5,1.1,3,North West,1269,976,93,104,96,0.01
+baseline,FedProx,43,8,validation,0.5,1.1,4,South East,470,43,47,46,334,0.01
+baseline,FedProx,43,8,validation,0.5,1.1,5,South South,408,79,130,28,171,0.01
+baseline,FedProx,43,8,validation,0.5,1.1,6,South West,481,25,64,50,342,0.01
+baseline,FedProx,43,9,validation,0.5,1.1,0,Pooled,4299,2003,490,539,1267,0.01
+baseline,FedProx,43,9,validation,0.5,1.1,1,North Central,768,279,90,163,236,0.01
+baseline,FedProx,43,9,validation,0.5,1.1,2,North East,903,599,68,146,90,0.01
+baseline,FedProx,43,9,validation,0.5,1.1,3,North West,1269,978,91,105,95,0.01
+baseline,FedProx,43,9,validation,0.5,1.1,4,South East,470,44,46,46,334,0.01
+baseline,FedProx,43,9,validation,0.5,1.1,5,South South,408,79,130,29,170,0.01
+baseline,FedProx,43,9,validation,0.5,1.1,6,South West,481,24,65,50,342,0.01
+baseline,FedProx,43,10,validation,0.5,1.1,0,Pooled,4299,1994,499,536,1270,0.01
+baseline,FedProx,43,10,validation,0.5,1.1,1,North Central,768,278,91,161,238,0.01
+baseline,FedProx,43,10,validation,0.5,1.1,2,North East,903,598,69,145,91,0.01
+baseline,FedProx,43,10,validation,0.5,1.1,3,North West,1269,974,95,105,95,0.01
+baseline,FedProx,43,10,validation,0.5,1.1,4,South East,470,43,47,45,335,0.01
+baseline,FedProx,43,10,validation,0.5,1.1,5,South South,408,78,131,29,170,0.01
+baseline,FedProx,43,10,validation,0.5,1.1,6,South West,481,23,66,51,341,0.01

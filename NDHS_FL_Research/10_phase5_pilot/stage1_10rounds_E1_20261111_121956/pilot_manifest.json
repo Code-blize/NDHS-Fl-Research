@@ -1,0 +1,81 @@
+{
+  "pilot_version": "1.0",
+  "stage": "stage1_10rounds_E1",
+  "purpose": "Computational feasibility and validation-behaviour pilot",
+  "confirmatory_experiment": false,
+  "test_partition_accessed": false,
+  "configurations": [
+    "baseline",
+    "expanded"
+  ],
+  "algorithms": [
+    "FedAvg",
+    "FedProx"
+  ],
+  "seeds": [
+    42,
+    43
+  ],
+  "communication_rounds": 10,
+  "local_epochs": 1,
+  "learning_rate": 0.001,
+  "fedprox_mu": 0.01,
+  "threshold": 0.5,
+  "ece_bins": 10,
+  "partition_sizes": {
+    "baseline": {
+      "training_n": 12851,
+      "validation_n": 4299,
+      "training_source_ids_unique": true,
+      "validation_source_ids_unique": true
+    },
+    "expanded": {
+      "training_n": 12851,
+      "validation_n": 4299,
+      "training_source_ids_unique": true,
+      "validation_source_ids_unique": true
+    }
+  },
+  "matched_initialization_checks": [
+    {
+      "configuration": "baseline",
+      "seed": 42,
+      "maximum_initial_parameter_difference": 0.0,
+      "passed": true
+    },
+    {
+      "configuration": "baseline",
+      "seed": 43,
+      "maximum_initial_parameter_difference": 0.0,
+      "passed": true
+    },
+    {
+      "configuration": "expanded",
+      "seed": 42,
+      "maximum_initial_parameter_difference": 0.0,
+      "passed": true
+    },
+    {
+      "configuration": "expanded",
+      "seed": 43,
+      "maximum_initial_parameter_difference": 0.0,
+      "passed": true
+    }
+  ],
+  "total_wall_clock_seconds_including_output_writing": 133.2689692999702,
+  "run_count": 8,
+  "all_runs_completed": true,
+  "canonical_implementation_sha256": "f9624ed210cd2ca9a27dbf9a7960425568b95a3996ef017709876a9561471f89",
+  "evaluation_module_sha256": "657c1804df6fdf633357cf50cb3be845a577a1708091b2e59c0524dc9ee18122",
+  "environment": {
+    "python_version": "3.11.9",
+    "platform": "Windows-10-10.0.19045-SP0",
+    "pytorch_version": "2.14.0+cpu",
+    "numpy_version": "2.4.6",
+    "pandas_version": "3.0.5",
+    "sklearn_version": "1.9.0",
+    "device": "cpu",
+    "deterministic_algorithms": true
+  },
+  "created_utc": "2026-11-11T11:22:09.778434+00:00"
+}
