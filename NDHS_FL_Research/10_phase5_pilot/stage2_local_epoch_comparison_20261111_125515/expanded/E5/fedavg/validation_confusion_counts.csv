@@ -1,0 +1,71 @@
+feature_configuration,algorithm,seed,communication_round,partition,threshold,evaluator_version,region_id,region,n,TN,FP,FN,TP,mu,configuration,local_epochs
+expanded,FedAvg,42,1,validation,0.5,1.1,0,Pooled,4299,2242,251,664,1142,0.0,expanded,5
+expanded,FedAvg,42,1,validation,0.5,1.1,1,North Central,768,341,28,227,172,0.0,expanded,5
+expanded,FedAvg,42,1,validation,0.5,1.1,2,North East,903,639,28,178,58,0.0,expanded,5
+expanded,FedAvg,42,1,validation,0.5,1.1,3,North West,1269,1019,50,125,75,0.0,expanded,5
+expanded,FedAvg,42,1,validation,0.5,1.1,4,South East,470,58,32,52,328,0.0,expanded,5
+expanded,FedAvg,42,1,validation,0.5,1.1,5,South South,408,142,67,37,162,0.0,expanded,5
+expanded,FedAvg,42,1,validation,0.5,1.1,6,South West,481,43,46,45,347,0.0,expanded,5
+expanded,FedAvg,42,2,validation,0.5,1.1,0,Pooled,4299,2082,411,452,1354,0.0,expanded,5
+expanded,FedAvg,42,2,validation,0.5,1.1,1,North Central,768,302,67,157,242,0.0,expanded,5
+expanded,FedAvg,42,2,validation,0.5,1.1,2,North East,903,608,59,142,94,0.0,expanded,5
+expanded,FedAvg,42,2,validation,0.5,1.1,3,North West,1269,990,79,104,96,0.0,expanded,5
+expanded,FedAvg,42,2,validation,0.5,1.1,4,South East,470,40,50,13,367,0.0,expanded,5
+expanded,FedAvg,42,2,validation,0.5,1.1,5,South South,408,110,99,14,185,0.0,expanded,5
+expanded,FedAvg,42,2,validation,0.5,1.1,6,South West,481,32,57,22,370,0.0,expanded,5
+expanded,FedAvg,42,3,validation,0.5,1.1,0,Pooled,4299,2093,400,460,1346,0.0,expanded,5
+expanded,FedAvg,42,3,validation,0.5,1.1,1,North Central,768,307,62,158,241,0.0,expanded,5
+expanded,FedAvg,42,3,validation,0.5,1.1,2,North East,903,610,57,142,94,0.0,expanded,5
+expanded,FedAvg,42,3,validation,0.5,1.1,3,North West,1269,996,73,111,89,0.0,expanded,5
+expanded,FedAvg,42,3,validation,0.5,1.1,4,South East,470,36,54,11,369,0.0,expanded,5
+expanded,FedAvg,42,3,validation,0.5,1.1,5,South South,408,114,95,16,183,0.0,expanded,5
+expanded,FedAvg,42,3,validation,0.5,1.1,6,South West,481,30,59,22,370,0.0,expanded,5
+expanded,FedAvg,42,4,validation,0.5,1.1,0,Pooled,4299,2088,405,444,1362,0.0,expanded,5
+expanded,FedAvg,42,4,validation,0.5,1.1,1,North Central,768,303,66,147,252,0.0,expanded,5
+expanded,FedAvg,42,4,validation,0.5,1.1,2,North East,903,611,56,140,96,0.0,expanded,5
+expanded,FedAvg,42,4,validation,0.5,1.1,3,North West,1269,1001,68,112,88,0.0,expanded,5
+expanded,FedAvg,42,4,validation,0.5,1.1,4,South East,470,34,56,10,370,0.0,expanded,5
+expanded,FedAvg,42,4,validation,0.5,1.1,5,South South,408,110,99,16,183,0.0,expanded,5
+expanded,FedAvg,42,4,validation,0.5,1.1,6,South West,481,29,60,19,373,0.0,expanded,5
+expanded,FedAvg,42,5,validation,0.5,1.1,0,Pooled,4299,2091,402,449,1357,0.0,expanded,5
+expanded,FedAvg,42,5,validation,0.5,1.1,1,North Central,768,303,66,148,251,0.0,expanded,5
+expanded,FedAvg,42,5,validation,0.5,1.1,2,North East,903,613,54,140,96,0.0,expanded,5
+expanded,FedAvg,42,5,validation,0.5,1.1,3,North West,1269,1001,68,115,85,0.0,expanded,5
+expanded,FedAvg,42,5,validation,0.5,1.1,4,South East,470,31,59,9,371,0.0,expanded,5
+expanded,FedAvg,42,5,validation,0.5,1.1,5,South South,408,114,95,17,182,0.0,expanded,5
+expanded,FedAvg,42,5,validation,0.5,1.1,6,South West,481,29,60,20,372,0.0,expanded,5
+expanded,FedAvg,42,6,validation,0.5,1.1,0,Pooled,4299,2090,403,446,1360,0.0,expanded,5
+expanded,FedAvg,42,6,validation,0.5,1.1,1,North Central,768,304,65,144,255,0.0,expanded,5
+expanded,FedAvg,42,6,validation,0.5,1.1,2,North East,903,611,56,141,95,0.0,expanded,5
+expanded,FedAvg,42,6,validation,0.5,1.1,3,North West,1269,1001,68,116,84,0.0,expanded,5
+expanded,FedAvg,42,6,validation,0.5,1.1,4,South East,470,30,60,7,373,0.0,expanded,5
+expanded,FedAvg,42,6,validation,0.5,1.1,5,South South,408,116,93,18,181,0.0,expanded,5
+expanded,FedAvg,42,6,validation,0.5,1.1,6,South West,481,28,61,20,372,0.0,expanded,5
+expanded,FedAvg,42,7,validation,0.5,1.1,0,Pooled,4299,2081,412,426,1380,0.0,expanded,5
+expanded,FedAvg,42,7,validation,0.5,1.1,1,North Central,768,301,68,132,267,0.0,expanded,5
+expanded,FedAvg,42,7,validation,0.5,1.1,2,North East,903,611,56,139,97,0.0,expanded,5
+expanded,FedAvg,42,7,validation,0.5,1.1,3,North West,1269,1000,69,115,85,0.0,expanded,5
+expanded,FedAvg,42,7,validation,0.5,1.1,4,South East,470,25,65,3,377,0.0,expanded,5
+expanded,FedAvg,42,7,validation,0.5,1.1,5,South South,408,116,93,18,181,0.0,expanded,5
+expanded,FedAvg,42,7,validation,0.5,1.1,6,South West,481,28,61,19,373,0.0,expanded,5
+expanded,FedAvg,42,8,validation,0.5,1.1,0,Pooled,4299,2078,415,430,1376,0.0,expanded,5
+expanded,FedAvg,42,8,validation,0.5,1.1,1,North Central,768,303,66,134,265,0.0,expanded,5
+expanded,FedAvg,42,8,validation,0.5,1.1,2,North East,903,613,54,139,97,0.0,expanded,5
+expanded,FedAvg,42,8,validation,0.5,1.1,3,North West,1269,1000,69,117,83,0.0,expanded,5
+expanded,FedAvg,42,8,validation,0.5,1.1,4,South East,470,20,70,3,377,0.0,expanded,5
+expanded,FedAvg,42,8,validation,0.5,1.1,5,South South,408,115,94,18,181,0.0,expanded,5
+expanded,FedAvg,42,8,validation,0.5,1.1,6,South West,481,27,62,19,373,0.0,expanded,5
+expanded,FedAvg,42,9,validation,0.5,1.1,0,Pooled,4299,2070,423,420,1386,0.0,expanded,5
+expanded,FedAvg,42,9,validation,0.5,1.1,1,North Central,768,299,70,128,271,0.0,expanded,5
+expanded,FedAvg,42,9,validation,0.5,1.1,2,North East,903,609,58,137,99,0.0,expanded,5
+expanded,FedAvg,42,9,validation,0.5,1.1,3,North West,1269,1002,67,115,85,0.0,expanded,5
+expanded,FedAvg,42,9,validation,0.5,1.1,4,South East,470,20,70,3,377,0.0,expanded,5
+expanded,FedAvg,42,9,validation,0.5,1.1,5,South South,408,113,96,18,181,0.0,expanded,5
+expanded,FedAvg,42,9,validation,0.5,1.1,6,South West,481,27,62,19,373,0.0,expanded,5
+expanded,FedAvg,42,10,validation,0.5,1.1,0,Pooled,4299,2078,415,433,1373,0.0,expanded,5
+expanded,FedAvg,42,10,validation,0.5,1.1,1,North Central,768,299,70,132,267,0.0,expanded,5
+expanded,FedAvg,42,10,validation,0.5,1.1,2,North East,903,611,56,140,96,0.0,expanded,5
+expanded,FedAvg,42,10,validation,0.5,1.1,3,North West,1269,1005,64,118,82,0.0,expanded,5
+expanded,FedAvg,42,10,validation,0.5,1.1,4,South East,470,19,71,3,377,0.0,expanded,5
+expanded,FedAvg,42,10,validation,0.5,1.1,5,South South,408,116,93,20,179,0.0,expanded,5
+expanded,FedAvg,42,10,validation,0.5,1.1,6,South West,481,28,61,20,372,0.0,expanded,5

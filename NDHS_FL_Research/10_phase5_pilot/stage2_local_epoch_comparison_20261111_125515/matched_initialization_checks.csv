@@ -1,0 +1,5 @@
+configuration,local_epochs,seed,maximum_initial_parameter_difference,passed
+baseline,5,42,0.0,True
+baseline,10,42,0.0,True
+expanded,5,42,0.0,True
+expanded,10,42,0.0,True

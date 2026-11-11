@@ -1,0 +1,87 @@
+{
+  "pilot_version": "1.0",
+  "stage": "stage2_local_epoch_comparison",
+  "purpose": "Compare E=5 and E=10 for computational feasibility and validation behaviour",
+  "confirmatory_experiment": false,
+  "test_partition_accessed": false,
+  "evaluation_partition": "validation",
+  "configurations": [
+    "baseline",
+    "expanded"
+  ],
+  "algorithms": [
+    "FedAvg",
+    "FedProx"
+  ],
+  "seed": 42,
+  "communication_rounds": 10,
+  "local_epoch_settings": [
+    5,
+    10
+  ],
+  "learning_rate": 0.001,
+  "fedprox_mu": 0.01,
+  "threshold": 0.5,
+  "ece_bins": 10,
+  "partition_preflight": {
+    "baseline": {
+      "training_n": 12851,
+      "validation_n": 4299,
+      "training_features": 15,
+      "validation_features": 15,
+      "training_source_ids_unique": true,
+      "validation_source_ids_unique": true
+    },
+    "expanded": {
+      "training_n": 12851,
+      "validation_n": 4299,
+      "training_features": 51,
+      "validation_features": 51,
+      "training_source_ids_unique": true,
+      "validation_source_ids_unique": true
+    }
+  },
+  "matched_initialization_checks": [
+    {
+      "configuration": "baseline",
+      "local_epochs": 5,
+      "seed": 42,
+      "maximum_initial_parameter_difference": 0.0,
+      "passed": true
+    },
+    {
+      "configuration": "baseline",
+      "local_epochs": 10,
+      "seed": 42,
+      "maximum_initial_parameter_difference": 0.0,
+      "passed": true
+    },
+    {
+      "configuration": "expanded",
+      "local_epochs": 5,
+      "seed": 42,
+      "maximum_initial_parameter_difference": 0.0,
+      "passed": true
+    },
+    {
+      "configuration": "expanded",
+      "local_epochs": 10,
+      "seed": 42,
+      "maximum_initial_parameter_difference": 0.0,
+      "passed": true
+    }
+  ],
+  "run_count": 8,
+  "all_runs_completed": true,
+  "total_wall_clock_seconds_including_output_writing": 988.678602400003,
+  "canonical_implementation_sha256": "f9624ed210cd2ca9a27dbf9a7960425568b95a3996ef017709876a9561471f89",
+  "evaluation_module_sha256": "657c1804df6fdf633357cf50cb3be845a577a1708091b2e59c0524dc9ee18122",
+  "python_version": "3.11.9",
+  "platform": "Windows-10-10.0.19045-SP0",
+  "pytorch_version": "2.14.0+cpu",
+  "numpy_version": "2.4.6",
+  "pandas_version": "3.0.5",
+  "device": "cpu",
+  "created_utc": "2026-11-11T12:11:46.598313+00:00",
+  "metric_recording_note": "Round trajectory is reconstructed from evaluator detailed records; AUPRC uses the evaluator field auprc_average_precision."
+}
