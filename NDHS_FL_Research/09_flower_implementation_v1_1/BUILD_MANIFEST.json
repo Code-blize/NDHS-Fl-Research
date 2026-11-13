@@ -1,0 +1,19 @@
+{
+  "version": "1.1.0-candidate",
+  "status": "candidate; requires user-side Windows tests and Ray smoke test",
+  "flower": "1.43.0",
+  "changes": [
+    "Explicit partition-id to v024 mapping",
+    "Strict six-region reply validation",
+    "Retain built-in round injection",
+    "Weighted aggregation contract tests",
+    "Pooled and regional full metric output including macro-F1, calibration and ECE",
+    "Direct run_simulation entry point"
+  ],
+  "remaining": [
+    "Install editable package with --no-deps",
+    "Run pytest suite",
+    "Run six-client Ray smoke test",
+    "End-to-end matched initialization and FedProx mu=0 verification"
+  ]
+}
