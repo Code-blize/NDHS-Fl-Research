@@ -1,0 +1,35 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "ndhs-flower"
+version = "1.0.0"
+requires-python = ">=3.12,<3.13"
+dependencies = ["flwr[simulation]==1.43.0", "torch==2.15.0", "numpy==2.5.4", "pandas==3.1.1", "scikit-learn==1.9.1"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["ndhs_flower"]
+
+[tool.flwr.app.components]
+serverapp = "ndhs_flower.server_app:app"
+clientapp = "ndhs_flower.client_app:app"
+
+[tool.flwr.app.config]
+num-server-rounds = 10
+fraction-train = 1.0
+local-epochs = 1
+batch-size = 32
+learning-rate = 0.001
+proximal-mu = 0.01
+algorithm = "fedavg"
+feature-config = "baseline"
+seed = 42
+train-data = "C:/Users/usher/Documents/NDHS-Fl-Research/NDHS_FL_Research/05_preprocessed/baseline_train.npz"
+validation-data = "C:/Users/usher/Documents/NDHS-Fl-Research/NDHS_FL_Research/05_preprocessed/baseline_validation.npz"
+output-dir = "outputs/pilot/baseline_fedavg_e1_s42"
+
+[tool.flwr.federations.local-simulation]
+options.num-supernodes = 6
+options.backend.client-resources.num-cpus = 1
+options.backend.client-resources.num-gpus = 0

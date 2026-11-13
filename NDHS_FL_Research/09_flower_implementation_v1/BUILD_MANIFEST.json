@@ -1,0 +1,13 @@
+{
+  "version": "1.0.0-initial-source-build",
+  "status": "not runtime-verified",
+  "flower": "1.43.0",
+  "python": "3.12",
+  "known_open_gates": [
+    "Confirm local-simulation partition-id mapping to v024 1..6",
+    "Confirm Flower 1.43 Message/RecordDict config and per-round behavior",
+    "Add weighted aggregation and complete metrics tests",
+    "Integrate calibration intercept/slope and ECE",
+    "Run six-node Flower runtime smoke test before pilot"
+  ]
+}
