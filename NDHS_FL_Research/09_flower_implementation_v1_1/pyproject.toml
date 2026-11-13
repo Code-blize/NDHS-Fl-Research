@@ -8,6 +8,8 @@ requires-python = ">=3.12,<3.13"
 dependencies = ["flwr[simulation]==1.43.0", "torch==2.15.0", "numpy==2.5.4", "pandas==3.1.1", "scikit-learn==1.9.1"]
 [tool.hatch.build.targets.wheel]
 packages = ["ndhs_flower"]
+[tool.flwr.app]
+publisher = "local"
 [tool.flwr.app.components]
 serverapp = "ndhs_flower.server_app:app"
 clientapp = "ndhs_flower.client_app:app"
