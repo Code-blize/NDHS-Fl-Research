@@ -20,13 +20,33 @@ local-epochs = 1
 batch-size = 32
 learning-rate = 0.001
 proximal-mu = 0.01
-algorithm = "fedavg"
+algorithm = "fedprox"
 feature-config = "baseline"
 seed = 42
 train-data = "C:/Users/usher/Documents/NDHS-Fl-Research/NDHS_FL_Research/05_preprocessed/baseline_train.npz"
 validation-data = "C:/Users/usher/Documents/NDHS-Fl-Research/NDHS_FL_Research/05_preprocessed/baseline_validation.npz"
-output-dir = "outputs/pilot/baseline_fedavg_e1_s42"
-[tool.flwr.federations.local-simulation]
-options.num-supernodes = 6
-options.backend.client-resources.num-cpus = 1
-options.backend.client-resources.num-gpus = 0
+output-dir = "outputs/integration_smoke/baseline_fedprox_e1_s42"
+
+#######################################################################
+# CONFIGURATION MIGRATION NOTICE:
+#
+# What was previously called "federation config" for SuperLink
+# connections in pyproject.toml has been renamed and moved.
+#
+# These settings are now **SuperLink connection configuration**
+# and are defined in the Flower configuration file.
+#
+# The entries below are commented out intentionally and are kept
+# only as a migration reference.
+#
+# Docs: https://flower.ai/docs/framework/ref-flower-configuration.html
+#######################################################################
+
+# [tool.flwr.federations]
+# default = "local-simulation"
+
+# [tool.flwr.federations.local-simulation]
+# options.num-supernodes = 6
+# options.backend.client-resources.num-cpus = 1
+# options.backend.client-resources.num-gpus = 0
+

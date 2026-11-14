@@ -1,0 +1,40 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "ndhs-flower"
+version = "1.2.0"
+description = "Auditable Flower implementation for the NDHS geographic heterogeneity study"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+  "flwr[simulation]==1.43.0",
+  "torch==2.15.0",
+  "numpy==2.5.4",
+  "pandas==3.1.1",
+  "scikit-learn==1.9.1"
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["ndhs_flower"]
+
+[tool.flwr.app]
+publisher = "local"
+
+[tool.flwr.app.components]
+serverapp = "ndhs_flower.server_app:app"
+clientapp = "ndhs_flower.client_app:app"
+
+[tool.flwr.app.config]
+num-server-rounds = 1
+local-epochs = 1
+batch-size = 32
+learning-rate = 0.001
+proximal-mu = 0.01
+algorithm = "fedprox"
+feature-config = "expanded"
+seed = 42
+train-data = "C:/Users/usher/Documents/NDHS-Fl-Research/NDHS_FL_Research/05_preprocessed/expanded_train.npz"
+validation-data = "C:/Users/usher/Documents/NDHS-Fl-Research/NDHS_FL_Research/05_preprocessed/expanded_validation.npz"
+output-dir = "outputs/integration_smoke/expanded_fedprox_e1_s42"
+

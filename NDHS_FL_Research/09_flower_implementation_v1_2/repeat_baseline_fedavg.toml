@@ -1,0 +1,10 @@
+algorithm = "fedavg"
+feature-config = "baseline"
+seed = 42
+num-server-rounds = 1
+local-epochs = 1
+batch-size = 32
+learning-rate = 0.001
+train-data = "C:/Users/usher/Documents/NDHS-Fl-Research/NDHS_FL_Research/05_preprocessed/baseline_train.npz"
+validation-data = "C:/Users/usher/Documents/NDHS-Fl-Research/NDHS_FL_Research/05_preprocessed/baseline_validation.npz"
+output-dir = "outputs/reproducibility/baseline_fedavg_e1_s42_repeat1"
