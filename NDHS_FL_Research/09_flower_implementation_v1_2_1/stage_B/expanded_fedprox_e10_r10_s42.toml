@@ -1,0 +1,11 @@
+num-server-rounds = 10
+local-epochs = 10
+batch-size = 32
+learning-rate = 0.001
+proximal-mu = 0.01
+algorithm = "fedprox"
+feature-config = "expanded"
+seed = 42
+train-data = "C:/Users/usher/Documents/NDHS-Fl-Research/NDHS_FL_Research/05_preprocessed/expanded_train.npz"
+validation-data = "C:/Users/usher/Documents/NDHS-Fl-Research/NDHS_FL_Research/05_preprocessed/expanded_validation.npz"
+output-dir = "outputs/pilot/stage_B/expanded_fedprox_e10_r10_s42"

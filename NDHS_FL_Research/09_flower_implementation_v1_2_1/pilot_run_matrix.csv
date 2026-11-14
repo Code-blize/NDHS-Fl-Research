@@ -1,0 +1,17 @@
+stage,feature_config,algorithm,communication_rounds,local_epochs,seed,batch_size,learning_rate,proximal_mu,output_dir
+A,baseline,fedavg,10,1,42,32,0.001,0.0,outputs/pilot/stage_A/baseline_fedavg_e1_r10_s42
+A,baseline,fedavg,10,1,43,32,0.001,0.0,outputs/pilot/stage_A/baseline_fedavg_e1_r10_s43
+A,baseline,fedprox,10,1,42,32,0.001,0.01,outputs/pilot/stage_A/baseline_fedprox_e1_r10_s42
+A,baseline,fedprox,10,1,43,32,0.001,0.01,outputs/pilot/stage_A/baseline_fedprox_e1_r10_s43
+A,expanded,fedavg,10,1,42,32,0.001,0.0,outputs/pilot/stage_A/expanded_fedavg_e1_r10_s42
+A,expanded,fedavg,10,1,43,32,0.001,0.0,outputs/pilot/stage_A/expanded_fedavg_e1_r10_s43
+A,expanded,fedprox,10,1,42,32,0.001,0.01,outputs/pilot/stage_A/expanded_fedprox_e1_r10_s42
+A,expanded,fedprox,10,1,43,32,0.001,0.01,outputs/pilot/stage_A/expanded_fedprox_e1_r10_s43
+B,baseline,fedavg,10,5,42,32,0.001,0.0,outputs/pilot/stage_B/baseline_fedavg_e5_r10_s42
+B,baseline,fedavg,10,10,42,32,0.001,0.0,outputs/pilot/stage_B/baseline_fedavg_e10_r10_s42
+B,baseline,fedprox,10,5,42,32,0.001,0.01,outputs/pilot/stage_B/baseline_fedprox_e5_r10_s42
+B,baseline,fedprox,10,10,42,32,0.001,0.01,outputs/pilot/stage_B/baseline_fedprox_e10_r10_s42
+B,expanded,fedavg,10,5,42,32,0.001,0.0,outputs/pilot/stage_B/expanded_fedavg_e5_r10_s42
+B,expanded,fedavg,10,10,42,32,0.001,0.0,outputs/pilot/stage_B/expanded_fedavg_e10_r10_s42
+B,expanded,fedprox,10,5,42,32,0.001,0.01,outputs/pilot/stage_B/expanded_fedprox_e5_r10_s42
+B,expanded,fedprox,10,10,42,32,0.001,0.01,outputs/pilot/stage_B/expanded_fedprox_e10_r10_s42

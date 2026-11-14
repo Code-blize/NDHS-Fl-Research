@@ -1,0 +1,554 @@
+{
+  "configuration": {
+    "algorithm": "fedprox",
+    "batch_size": 32,
+    "expected_regions": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "feature_config": "expanded",
+    "fraction_train": 1.0,
+    "input_dim": 51,
+    "learning_rate": 0.001,
+    "local_epochs": 1,
+    "num_server_rounds": 10,
+    "output_dir": "C:\\Users\\usher\\Documents\\NDHS-Fl-Research\\NDHS_FL_Research\\09_flower_implementation_v1_2_1\\outputs\\pilot\\stage_A\\expanded_fedprox_e1_r10_s42",
+    "proximal_mu": 0.01,
+    "seed": 42,
+    "train_data": "C:\\Users\\usher\\Documents\\NDHS-Fl-Research\\NDHS_FL_Research\\05_preprocessed\\expanded_train.npz",
+    "validation_data": "C:\\Users\\usher\\Documents\\NDHS-Fl-Research\\NDHS_FL_Research\\05_preprocessed\\expanded_validation.npz",
+    "weighted_by": "num-examples"
+  },
+  "created_utc": "2026-11-14T12:28:47.155249+00:00",
+  "failure_reason": null,
+  "final_parameters_sha256": "7d8338a87b1b23f7b72c8ae2089fbb8ff504f50857eb1dc6f962732ac91e0d91",
+  "implementation_version": "1.2.1",
+  "initial_parameters_sha256": "81e11e5e356a8c493232cd63c1126434dc2a54de02a0f4b46f322191d8dfd761",
+  "round_audit": [
+    {
+      "client_participation": [
+        {
+          "num_examples": 2304,
+          "partition_id": 0,
+          "region_code": 1,
+          "unique_source_ids": 2304
+        },
+        {
+          "num_examples": 2698,
+          "partition_id": 1,
+          "region_code": 2,
+          "unique_source_ids": 2698
+        },
+        {
+          "num_examples": 3767,
+          "partition_id": 2,
+          "region_code": 3,
+          "unique_source_ids": 3767
+        },
+        {
+          "num_examples": 1402,
+          "partition_id": 3,
+          "region_code": 4,
+          "unique_source_ids": 1402
+        },
+        {
+          "num_examples": 1231,
+          "partition_id": 4,
+          "region_code": 5,
+          "unique_source_ids": 1231
+        },
+        {
+          "num_examples": 1449,
+          "partition_id": 5,
+          "region_code": 6,
+          "unique_source_ids": 1449
+        }
+      ],
+      "clients_expected": 6,
+      "clients_replied": 6,
+      "regions": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "server_round": 1
+    },
+    {
+      "client_participation": [
+        {
+          "num_examples": 2304,
+          "partition_id": 0,
+          "region_code": 1,
+          "unique_source_ids": 2304
+        },
+        {
+          "num_examples": 2698,
+          "partition_id": 1,
+          "region_code": 2,
+          "unique_source_ids": 2698
+        },
+        {
+          "num_examples": 3767,
+          "partition_id": 2,
+          "region_code": 3,
+          "unique_source_ids": 3767
+        },
+        {
+          "num_examples": 1402,
+          "partition_id": 3,
+          "region_code": 4,
+          "unique_source_ids": 1402
+        },
+        {
+          "num_examples": 1231,
+          "partition_id": 4,
+          "region_code": 5,
+          "unique_source_ids": 1231
+        },
+        {
+          "num_examples": 1449,
+          "partition_id": 5,
+          "region_code": 6,
+          "unique_source_ids": 1449
+        }
+      ],
+      "clients_expected": 6,
+      "clients_replied": 6,
+      "regions": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "server_round": 2
+    },
+    {
+      "client_participation": [
+        {
+          "num_examples": 2304,
+          "partition_id": 0,
+          "region_code": 1,
+          "unique_source_ids": 2304
+        },
+        {
+          "num_examples": 2698,
+          "partition_id": 1,
+          "region_code": 2,
+          "unique_source_ids": 2698
+        },
+        {
+          "num_examples": 3767,
+          "partition_id": 2,
+          "region_code": 3,
+          "unique_source_ids": 3767
+        },
+        {
+          "num_examples": 1402,
+          "partition_id": 3,
+          "region_code": 4,
+          "unique_source_ids": 1402
+        },
+        {
+          "num_examples": 1231,
+          "partition_id": 4,
+          "region_code": 5,
+          "unique_source_ids": 1231
+        },
+        {
+          "num_examples": 1449,
+          "partition_id": 5,
+          "region_code": 6,
+          "unique_source_ids": 1449
+        }
+      ],
+      "clients_expected": 6,
+      "clients_replied": 6,
+      "regions": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "server_round": 3
+    },
+    {
+      "client_participation": [
+        {
+          "num_examples": 2304,
+          "partition_id": 0,
+          "region_code": 1,
+          "unique_source_ids": 2304
+        },
+        {
+          "num_examples": 2698,
+          "partition_id": 1,
+          "region_code": 2,
+          "unique_source_ids": 2698
+        },
+        {
+          "num_examples": 3767,
+          "partition_id": 2,
+          "region_code": 3,
+          "unique_source_ids": 3767
+        },
+        {
+          "num_examples": 1402,
+          "partition_id": 3,
+          "region_code": 4,
+          "unique_source_ids": 1402
+        },
+        {
+          "num_examples": 1231,
+          "partition_id": 4,
+          "region_code": 5,
+          "unique_source_ids": 1231
+        },
+        {
+          "num_examples": 1449,
+          "partition_id": 5,
+          "region_code": 6,
+          "unique_source_ids": 1449
+        }
+      ],
+      "clients_expected": 6,
+      "clients_replied": 6,
+      "regions": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "server_round": 4
+    },
+    {
+      "client_participation": [
+        {
+          "num_examples": 2304,
+          "partition_id": 0,
+          "region_code": 1,
+          "unique_source_ids": 2304
+        },
+        {
+          "num_examples": 2698,
+          "partition_id": 1,
+          "region_code": 2,
+          "unique_source_ids": 2698
+        },
+        {
+          "num_examples": 3767,
+          "partition_id": 2,
+          "region_code": 3,
+          "unique_source_ids": 3767
+        },
+        {
+          "num_examples": 1402,
+          "partition_id": 3,
+          "region_code": 4,
+          "unique_source_ids": 1402
+        },
+        {
+          "num_examples": 1231,
+          "partition_id": 4,
+          "region_code": 5,
+          "unique_source_ids": 1231
+        },
+        {
+          "num_examples": 1449,
+          "partition_id": 5,
+          "region_code": 6,
+          "unique_source_ids": 1449
+        }
+      ],
+      "clients_expected": 6,
+      "clients_replied": 6,
+      "regions": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "server_round": 5
+    },
+    {
+      "client_participation": [
+        {
+          "num_examples": 2304,
+          "partition_id": 0,
+          "region_code": 1,
+          "unique_source_ids": 2304
+        },
+        {
+          "num_examples": 2698,
+          "partition_id": 1,
+          "region_code": 2,
+          "unique_source_ids": 2698
+        },
+        {
+          "num_examples": 3767,
+          "partition_id": 2,
+          "region_code": 3,
+          "unique_source_ids": 3767
+        },
+        {
+          "num_examples": 1402,
+          "partition_id": 3,
+          "region_code": 4,
+          "unique_source_ids": 1402
+        },
+        {
+          "num_examples": 1231,
+          "partition_id": 4,
+          "region_code": 5,
+          "unique_source_ids": 1231
+        },
+        {
+          "num_examples": 1449,
+          "partition_id": 5,
+          "region_code": 6,
+          "unique_source_ids": 1449
+        }
+      ],
+      "clients_expected": 6,
+      "clients_replied": 6,
+      "regions": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "server_round": 6
+    },
+    {
+      "client_participation": [
+        {
+          "num_examples": 2304,
+          "partition_id": 0,
+          "region_code": 1,
+          "unique_source_ids": 2304
+        },
+        {
+          "num_examples": 2698,
+          "partition_id": 1,
+          "region_code": 2,
+          "unique_source_ids": 2698
+        },
+        {
+          "num_examples": 3767,
+          "partition_id": 2,
+          "region_code": 3,
+          "unique_source_ids": 3767
+        },
+        {
+          "num_examples": 1402,
+          "partition_id": 3,
+          "region_code": 4,
+          "unique_source_ids": 1402
+        },
+        {
+          "num_examples": 1231,
+          "partition_id": 4,
+          "region_code": 5,
+          "unique_source_ids": 1231
+        },
+        {
+          "num_examples": 1449,
+          "partition_id": 5,
+          "region_code": 6,
+          "unique_source_ids": 1449
+        }
+      ],
+      "clients_expected": 6,
+      "clients_replied": 6,
+      "regions": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "server_round": 7
+    },
+    {
+      "client_participation": [
+        {
+          "num_examples": 2304,
+          "partition_id": 0,
+          "region_code": 1,
+          "unique_source_ids": 2304
+        },
+        {
+          "num_examples": 2698,
+          "partition_id": 1,
+          "region_code": 2,
+          "unique_source_ids": 2698
+        },
+        {
+          "num_examples": 3767,
+          "partition_id": 2,
+          "region_code": 3,
+          "unique_source_ids": 3767
+        },
+        {
+          "num_examples": 1402,
+          "partition_id": 3,
+          "region_code": 4,
+          "unique_source_ids": 1402
+        },
+        {
+          "num_examples": 1231,
+          "partition_id": 4,
+          "region_code": 5,
+          "unique_source_ids": 1231
+        },
+        {
+          "num_examples": 1449,
+          "partition_id": 5,
+          "region_code": 6,
+          "unique_source_ids": 1449
+        }
+      ],
+      "clients_expected": 6,
+      "clients_replied": 6,
+      "regions": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "server_round": 8
+    },
+    {
+      "client_participation": [
+        {
+          "num_examples": 2304,
+          "partition_id": 0,
+          "region_code": 1,
+          "unique_source_ids": 2304
+        },
+        {
+          "num_examples": 2698,
+          "partition_id": 1,
+          "region_code": 2,
+          "unique_source_ids": 2698
+        },
+        {
+          "num_examples": 3767,
+          "partition_id": 2,
+          "region_code": 3,
+          "unique_source_ids": 3767
+        },
+        {
+          "num_examples": 1402,
+          "partition_id": 3,
+          "region_code": 4,
+          "unique_source_ids": 1402
+        },
+        {
+          "num_examples": 1231,
+          "partition_id": 4,
+          "region_code": 5,
+          "unique_source_ids": 1231
+        },
+        {
+          "num_examples": 1449,
+          "partition_id": 5,
+          "region_code": 6,
+          "unique_source_ids": 1449
+        }
+      ],
+      "clients_expected": 6,
+      "clients_replied": 6,
+      "regions": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "server_round": 9
+    },
+    {
+      "client_participation": [
+        {
+          "num_examples": 2304,
+          "partition_id": 0,
+          "region_code": 1,
+          "unique_source_ids": 2304
+        },
+        {
+          "num_examples": 2698,
+          "partition_id": 1,
+          "region_code": 2,
+          "unique_source_ids": 2698
+        },
+        {
+          "num_examples": 3767,
+          "partition_id": 2,
+          "region_code": 3,
+          "unique_source_ids": 3767
+        },
+        {
+          "num_examples": 1402,
+          "partition_id": 3,
+          "region_code": 4,
+          "unique_source_ids": 1402
+        },
+        {
+          "num_examples": 1231,
+          "partition_id": 4,
+          "region_code": 5,
+          "unique_source_ids": 1231
+        },
+        {
+          "num_examples": 1449,
+          "partition_id": 5,
+          "region_code": 6,
+          "unique_source_ids": 1449
+        }
+      ],
+      "clients_expected": 6,
+      "clients_replied": 6,
+      "regions": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "server_round": 10
+    }
+  ],
+  "software": {
+    "flower": "1.43.0",
+    "numpy": "2.5.4",
+    "pandas": "3.1.1",
+    "platform": "Windows-10-10.0.19045-SP0",
+    "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+    "scikit_learn": "1.9.1",
+    "torch": "2.15.0+cpu"
+  },
+  "status": "completed",
+  "validation_rows": 77
+}

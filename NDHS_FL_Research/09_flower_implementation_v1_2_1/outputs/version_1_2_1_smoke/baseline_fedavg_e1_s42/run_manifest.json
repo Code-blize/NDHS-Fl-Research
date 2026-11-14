@@ -1,0 +1,95 @@
+{
+  "configuration": {
+    "algorithm": "fedavg",
+    "batch_size": 32,
+    "expected_regions": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "feature_config": "baseline",
+    "fraction_train": 1.0,
+    "input_dim": 15,
+    "learning_rate": 0.001,
+    "local_epochs": 1,
+    "num_server_rounds": 1,
+    "output_dir": "C:\\Users\\usher\\Documents\\NDHS-Fl-Research\\NDHS_FL_Research\\09_flower_implementation_v1_2_1\\outputs\\version_1_2_1_smoke\\baseline_fedavg_e1_s42",
+    "proximal_mu": 0.0,
+    "seed": 42,
+    "train_data": "C:\\Users\\usher\\Documents\\NDHS-Fl-Research\\NDHS_FL_Research\\05_preprocessed\\baseline_train.npz",
+    "validation_data": "C:\\Users\\usher\\Documents\\NDHS-Fl-Research\\NDHS_FL_Research\\05_preprocessed\\baseline_validation.npz",
+    "weighted_by": "num-examples"
+  },
+  "created_utc": "2026-11-14T11:26:12.927462+00:00",
+  "failure_reason": null,
+  "final_parameters_sha256": "2c8515419255a903d8e269cbd01d8538cbb176fc75a95378edc41b5bc772ca94",
+  "implementation_version": "1.2.1",
+  "initial_parameters_sha256": "a08111d74b9115d4adb5bf34a1e3379c7779f0f97d9000add4f83ef939618e40",
+  "round_audit": [
+    {
+      "client_participation": [
+        {
+          "num_examples": 2304,
+          "partition_id": 0,
+          "region_code": 1,
+          "unique_source_ids": 2304
+        },
+        {
+          "num_examples": 2698,
+          "partition_id": 1,
+          "region_code": 2,
+          "unique_source_ids": 2698
+        },
+        {
+          "num_examples": 3767,
+          "partition_id": 2,
+          "region_code": 3,
+          "unique_source_ids": 3767
+        },
+        {
+          "num_examples": 1402,
+          "partition_id": 3,
+          "region_code": 4,
+          "unique_source_ids": 1402
+        },
+        {
+          "num_examples": 1231,
+          "partition_id": 4,
+          "region_code": 5,
+          "unique_source_ids": 1231
+        },
+        {
+          "num_examples": 1449,
+          "partition_id": 5,
+          "region_code": 6,
+          "unique_source_ids": 1449
+        }
+      ],
+      "clients_expected": 6,
+      "clients_replied": 6,
+      "regions": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "server_round": 1
+    }
+  ],
+  "software": {
+    "flower": "1.43.0",
+    "numpy": "2.5.4",
+    "pandas": "3.1.1",
+    "platform": "Windows-10-10.0.19045-SP0",
+    "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+    "scikit_learn": "1.9.1",
+    "torch": "2.15.0+cpu"
+  },
+  "status": "completed",
+  "validation_rows": 14
+}

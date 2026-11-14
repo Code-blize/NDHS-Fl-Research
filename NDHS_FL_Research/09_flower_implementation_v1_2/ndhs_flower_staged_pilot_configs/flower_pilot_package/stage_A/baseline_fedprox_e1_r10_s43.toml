@@ -1,0 +1,11 @@
+num-server-rounds = 10
+local-epochs = 1
+batch-size = 32
+learning-rate = 0.001
+proximal-mu = 0.01
+algorithm = "fedprox"
+feature-config = "baseline"
+seed = 43
+train-data = "C:/Users/usher/Documents/NDHS-Fl-Research/NDHS_FL_Research/05_preprocessed/baseline_train.npz"
+validation-data = "C:/Users/usher/Documents/NDHS-Fl-Research/NDHS_FL_Research/05_preprocessed/baseline_validation.npz"
+output-dir = "outputs/pilot/stage_A/baseline_fedprox_e1_r10_s43"

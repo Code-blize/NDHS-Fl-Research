@@ -1,0 +1,23 @@
+{
+  "version": "1.2.0-candidate",
+  "status": "source candidate; not yet tested in user's Windows environment",
+  "baseline": "09_flower_implementation_v1_1_candidate.zip",
+  "flower_target": "1.43.0",
+  "changes": [
+    "Official execution pathway is Flower CLI; direct run_simulation runner removed",
+    "One-round integration smoke-test configuration",
+    "Public Message reply checks; no private FedAvg reply-check helper",
+    "Explicit six-region and partition-to-region consistency validation",
+    "Per-round regional participation audit",
+    "Exclusive output-directory creation to prevent overwrite",
+    "Run manifest with configuration, software versions, parameter hashes and status",
+    "Validation metrics at round 0 and after each round",
+    "Expanded unit and strategy-contract tests"
+  ],
+  "not_yet_verified": [
+    "Windows unit-test execution",
+    "Flower CLI application build",
+    "Six-client Ray integration smoke test",
+    "Runtime partition-id to geopolitical-zone mapping"
+  ]
+}
