@@ -20,3 +20,21 @@ build/
 dist/
 *.egg-info/
 
+
+# NDHS Flower generated experiment outputs
+NDHS_FL_Research/09_flower_implementation_v1_2_1/outputs/
+NDHS_FL_Research/09_flower_implementation_v1_2_1/stage_C/
+
+# Generated experiment packages (retain locally)
+NDHS_FL_Research/09_flower_implementation_v1_2_1/flower_confirmatory_package_v*/
+NDHS_FL_Research/09_flower_implementation_v1_2_1/heldout_test_evaluation_package/
+NDHS_FL_Research/09_flower_implementation_v1_2_1/heldout_test_evaluation_runner_bundle/
+
+# Generated experiment archives
+NDHS_FL_Research/09_flower_implementation_v1_2_1/confirmatory_manifests_40.zip
+NDHS_FL_Research/09_flower_implementation_v1_2_1/confirmatory_validation_metrics_40.zip
+NDHS_FL_Research/09_flower_implementation_v1_2_1/heldout_test_evaluation_outputs.zip
+NDHS_FL_Research/09_flower_implementation_v1_2_1/heldout_test_evaluation_package.zip
+flower_confirmatory_package_v1.zip
+flower_confirmatory_package_v2_seeds_42_51.zip
+ndhs_flower_staged_pilot_configs.zip
