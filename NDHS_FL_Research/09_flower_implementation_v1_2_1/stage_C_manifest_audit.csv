@@ -1,0 +1,5 @@
+"RunFolder","ImplementationVersion","Status","FailureReason","Algorithm","FeatureConfig","ProximalMu","Rounds","LocalEpochs","Seed","BatchSize","LearningRate","InputDimension","InitialHash","FinalHash","TrainData","ValidationData","ValidationRows","Software","RoundAuditCount","AllRoundsSixClients"
+"baseline_fedavg_e5_r25_s42","1.2.1","completed",,,,,,,,,,,,,,,"182","1.43.0 / 2.15.0+cpu / 3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]","1","False"
+"baseline_fedprox_e5_r25_s42_retry02","1.2.1","completed",,,,,,,,,,,,,,,"182","1.43.0 / 2.15.0+cpu / 3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]","1","False"
+"expanded_fedavg_e5_r25_s42","1.2.1","completed",,,,,,,,,,,,,,,"182","1.43.0 / 2.15.0+cpu / 3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]","1","False"
+"expanded_fedprox_e5_r25_s42","1.2.1","completed",,,,,,,,,,,,,,,"182","1.43.0 / 2.15.0+cpu / 3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]","1","False"
