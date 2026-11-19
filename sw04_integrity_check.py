@@ -1,5 +1,6 @@
 # inspecting the preprocessing and partition badge
 
+
 from pathlib import Path
 import pandas as pd
 import numpy as np
@@ -21,29 +22,60 @@ partitions = pd.read_csv(
     dtype={"source_row_id": "string"}
 )
 
-# Attach survey-design variables to partition assignments.
+# Merge only the survey-design fields not already in partitions.
+design_fields = [
+    "source_row_id",
+    "survey_weight",
+    "v005",
+    "v022",
+    "v023"
+]
+
 df = partitions.merge(
-    metadata[
-        ["source_row_id", "survey_weight", "v005",
-         "v021", "v022", "v023", "v001", "v024"]
-    ],
+    metadata[design_fields],
     on="source_row_id",
     how="left",
-    validate="one_to_one",
-    suffixes=("_partition", "_metadata")
+    validate="one_to_one"
 )
 
 print("=" * 70)
-print("SW-01: CORRECTED PARTITION AND SURVEY DESIGN AUDIT")
+print("SW-01: FINAL PARTITION AND SURVEY DESIGN AUDIT")
 print("=" * 70)
 
 print("\n--- MERGED DATASET ---")
 print("Rows:", len(df))
-print("Missing survey weights:", df["survey_weight"].isna().sum())
-print("Missing v022:", df["v022"].isna().sum())
-print("Missing v021:", df["v021"].isna().sum())
 
-# PSU overlap between partitions
+for col in [
+    "survey_weight", "v005", "v021",
+    "v022", "v023", "v024"
+]:
+    print(col, "missing:", df[col].isna().sum())
+
+# Confirm partition and metadata identifiers agree.
+print("\n--- IDENTIFIER CONSISTENCY ---")
+print(
+    "v021 and v001 identical:",
+    (metadata["v021"].to_numpy() ==
+     metadata["v001"].to_numpy()).all()
+)
+
+# Confirm region and PSU fields agree between source files.
+check = partitions.merge(
+    metadata[["source_row_id", "v021", "v024"]],
+    on="source_row_id",
+    how="inner",
+    suffixes=("_partition", "_metadata"),
+    validate="one_to_one"
+)
+
+for col in ["v021", "v024"]:
+    mismatch = (
+        check[f"{col}_partition"] !=
+        check[f"{col}_metadata"]
+    )
+    print(f"{col} mismatches:", mismatch.sum())
+
+# PSU overlap across partitions.
 print("\n--- PSU OVERLAP ---")
 
 psu_partition_counts = (
@@ -57,15 +89,16 @@ print("PSUs in one partition only:", (psu_partition_counts == 1).sum())
 print("\nPSUs by number of partitions:")
 print(psu_partition_counts.value_counts().sort_index().to_string())
 
-# Region and strata distribution
+# Regional distribution.
 print("\n--- REGION DISTRIBUTION BY PARTITION ---")
 print(
     pd.crosstab(
         df["partition"],
-        df["v024_partition"]
+        df["v024"]
     ).to_string()
 )
 
+# Strata distribution.
 print("\n--- STRATA DISTRIBUTION BY PARTITION ---")
 print(
     pd.crosstab(
@@ -74,7 +107,7 @@ print(
     ).to_string()
 )
 
-# PSUs represented in each partition and stratum
+# PSU counts per stratum in each partition.
 print("\n--- PSUs PER STRATUM BY PARTITION ---")
 
 for name in ["train", "validation", "test"]:
@@ -89,7 +122,7 @@ for name in ["train", "validation", "test"]:
     print("Strata with at least two PSUs:", (counts >= 2).sum())
     print("Unrepresented strata:", 74 - len(counts))
 
-# Weight summaries
+# Weight summaries.
 print("\n--- WEIGHT SUMMARY BY PARTITION ---")
 
 for name in ["train", "validation", "test"]:
@@ -106,5 +139,5 @@ for name in ["train", "validation", "test"]:
     print("Effective sample size:", effective_n)
 
 print("\n" + "=" * 70)
-print("CORRECTED AUDIT COMPLETE — NO SOURCE FILES MODIFIED")
+print("AUDIT COMPLETE — NO SOURCE FILES MODIFIED")
 print("=" * 70)
