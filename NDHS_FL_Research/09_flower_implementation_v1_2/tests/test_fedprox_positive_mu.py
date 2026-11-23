@@ -1,4 +1,4 @@
-﻿import copy
+import copy
 
 import numpy as np
 import torch
@@ -27,17 +27,31 @@ def test_fedprox_positive_mu_changes_local_update():
         "seed": 2026,
     }
 
-    train_local(fedavg_model, proximal_mu=0.0, **common)
-    train_local(fedprox_model, proximal_mu=0.01, **common)
+    train_local(
+        fedavg_model,
+        proximal_mu=0.0,
+        **common,
+    )
+
+    train_local(
+        fedprox_model,
+        proximal_mu=0.01,
+        **common,
+    )
 
     differences = [
         torch.max(torch.abs(a - b)).item()
-        for a, b in zip(fedavg_model.parameters(), fedprox_model.parameters())
+        for a, b in zip(
+            fedavg_model.parameters(),
+            fedprox_model.parameters(),
+        )
     ]
 
     max_difference = max(differences)
-    print(f"Maximum parameter difference: {max_difference:.12g}")
 
     assert max_difference > 1e-12, (
-        "FedProx with μ=0.01 produced the same local parameters as FedAvg."
+        "FedProx with μ=0.01 produced the same local parameters "
+        "as FedAvg with μ=0."
     )
+
+    print(f"Maximum parameter difference: {max_difference:.12g}")
