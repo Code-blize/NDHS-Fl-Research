@@ -9,11 +9,11 @@ import phase7_1_baseline_benchmarks as bench
 import canonical_federated_implementation_v1_1 as canonical
 
 
-SEEDS = range(43, 52)
+SEEDS = range(42, 52)
 CONFIGURATIONS = ("baseline", "expanded")
 
 ROOT = Path(__file__).resolve().parent
-OUTPUT_DIR = ROOT / "phase7_2_baseline_benchmarks_seeds_43_51"
+OUTPUT_DIR = ROOT / "phase7_2_baseline_benchmarks_seeds_42_51"
 
 
 def run_seed(seed: int) -> None:
@@ -124,6 +124,10 @@ def run_seed(seed: int) -> None:
         "threshold": bench.THRESHOLD,
         "evaluation_partition": "validation",
         "survey_weights_used": False,
+        "optimizer_reset_interval_epochs": 5,
+        "optimizer_protocol": (
+            "Fresh Adam optimizer every 5 epochs; 50 epochs total."
+        ),
         "local_only_protocol": (
             "One independently trained MLP per region; each evaluated "
             "on that region's validation subset."

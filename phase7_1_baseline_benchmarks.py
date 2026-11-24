@@ -95,9 +95,6 @@ def train_mlp(X, y, *, seed, epochs=EPOCHS):
     set_all_seeds(seed)
 
     model = canonical.MLP(X.shape[1]).to(canonical.DEVICE)
-    optimizer = torch.optim.Adam(
-        model.parameters(), lr=LEARNING_RATE
-    )
     criterion = nn.BCEWithLogitsLoss()
 
     dataset = TensorDataset(
@@ -113,13 +110,22 @@ def train_mlp(X, y, *, seed, epochs=EPOCHS):
         num_workers=0,
     )
 
+    optimizer_reset_interval = 5
     model.train()
-    for _ in range(epochs):
-        for batch_X, batch_y in loader:
-            optimizer.zero_grad()
-            loss = criterion(model(batch_X), batch_y)
-            loss.backward()
-            optimizer.step()
+
+    for block_start in range(0, epochs, optimizer_reset_interval):
+        # Fresh Adam state at the start of each 5-epoch block.
+        optimizer = torch.optim.Adam(
+            model.parameters(), lr=LEARNING_RATE
+        )
+        block_end = min(block_start + optimizer_reset_interval, epochs)
+
+        for _ in range(block_start, block_end):
+            for batch_X, batch_y in loader:
+                optimizer.zero_grad()
+                loss = criterion(model(batch_X), batch_y)
+                loss.backward()
+                optimizer.step()
 
     model.eval()
     return model
@@ -246,6 +252,8 @@ def main():
         "threshold": THRESHOLD,
         "evaluation_partition": "validation",
         "survey_weights_used": False,
+        "optimizer_reset_interval_epochs": 5,
+        "optimizer_protocol": "Fresh Adam optimizer every 5 epochs; 50 epochs total.",
         "local_only_protocol": (
             "One independently trained MLP per region; each evaluated "
             "on that region's validation subset."
