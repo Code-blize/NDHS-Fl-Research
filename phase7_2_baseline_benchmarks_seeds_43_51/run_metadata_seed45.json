@@ -1,0 +1,17 @@
+{
+  "phase": "7.2",
+  "seed": 45,
+  "configurations": [
+    "baseline",
+    "expanded"
+  ],
+  "centralized_and_local_mlp_epochs": 50,
+  "federated_reference_budget": "10 rounds x 5 local epochs",
+  "batch_size": 32,
+  "learning_rate": 0.001,
+  "threshold": 0.5,
+  "evaluation_partition": "validation",
+  "survey_weights_used": false,
+  "local_only_protocol": "One independently trained MLP per region; each evaluated on that region's validation subset.",
+  "metrics_rows": 40
+}
